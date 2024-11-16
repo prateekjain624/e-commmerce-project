@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this is the header -->
+    <header>
+      <nav id="navbar">
+        <div id="logoimg">
+          <img src="https://via.placeholder.com/150x50?text=ShopLogo" alt="" />
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productpage.html">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="Cart.html">Cart</a></li>
+          <li><a href="signup.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- this is the hero section  -->
+
+    <section id="hero-section">
+      <div class="container">
+        <h2>Welcome To Our Online Store</h2>
+        <p>Discover the best products at unbeatable</p>
+        <a href="productpage.html"><button class="btn">Shop Now</button></a>
+        <p class="offer-text">Special offer! get 20% of on all Electronics</p>
+      </div>
+    </section>
+
+    <!-- this is the shop category -->
+
+    <section id="Shop-category">
+      <div class="container">
+        <h1>Shop by Category</h1>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://m.media-amazon.com/images/G/31/img15/zak/24/dell/BAU_ATF_HALO_Dell_1._CB583176886_.png"
+              alt=""
+            />
+            <h3>Electronics</h3>
+          </div>
+          <div class="card">
+            <img
+              src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/Flip/Springsummerflip/Halo/main/V1/mens._SS300_QL85_FMpng_.png"
+              alt=""
+            />
+            <h3>Fashion</h3>
+          </div>
+          <div class="card">
+            <img
+              src="https://m.media-amazon.com/images/I/81Q9ntWMG+L.AC_SX500.jpg"
+              alt=""
+            />
+            <h3>Home Decor</h3>
+          </div>
+          <div class="card">
+            <img
+              src="https://m.media-amazon.com/images/G/31/img21/Books/newhalobx24/HALO2._SS300_QL85_FMpng_.png"
+              alt=""
+            />
+            <h3>Books</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- this is the featured product -->
+    <section id="featured-product">
+      <div class="container">
+        <h1>Featured Product</h1>
+        <div class="card-container" id="card-container">
+          <!-- card are getting added from the js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- product comparison -->
+    <section id="product-comparison">
+      <div class="container">
+        <h1>Product Features Comparison</h1>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th rowspan="2">Product</th>
+              <th rowspan="2">Price</th>
+              <th rowspan="2">Features</th>
+              <th colspan="2">Details</th>
+            </tr>
+            <tr>
+              <th>Size</th>
+              <th>Weight</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- added dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Customer testimonials starts -->
+    <section id="customer-testimonials">
+      <div class="container">
+        <h1>Customer Testimonials</h1>
+        <div class="testimonials-container">
+          <div class="testimonials">
+            <p>"Amazing products! Fast shipping and great customer service."</p>
+            <h3>- John Doe</h3>
+          </div>
+          <div class="testimonials">
+            <p>"I love shopping here. The prices are unbeatable."</p>
+            <h3>- Jane Smith</h3>
+          </div>
+          <div class="testimonials">
+            <p>"Fantastic quality. Will definitely buy again."</p>
+            <h3>- Bob Johnson</h3>
+          </div>
+          <div class="testimonials">
+            <p>"Great variety and easy to use website. Highly recommend!"</p>
+            <h3>- Alice Brown</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer starts here -->
+
+    <footer id="footer">
+      <p>&copy; 2024 E-commerce Store. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

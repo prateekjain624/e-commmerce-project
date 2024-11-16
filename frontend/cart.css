@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+
+  background-color: #f4f4f4;
+
+  color: #333;
+}
+
+.main {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+  text-decoration: underline;
+}
+
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.card {
+  /* background-color: wheat; */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  width: calc(25% - 20px);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+
+.container {
+  padding: 0 1rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.item-title{
+  
+  min-height: 3rem;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.item-price{
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 5px;
+  min-height: 2rem;
+}
+
+.cart-actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.quantity-input{
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.remove-btn{
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+
+}
+
+.total{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.checkout{
+  display: block;
+  padding: 10px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(22, 127, 161);
+  color: white;
+  border: none;
+}
+
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .card{
+    width: calc(33.33% - 20px);
+    /* Three items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+    /* Two items per row on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    /* One item per row on very small screens */
+  }
+}
